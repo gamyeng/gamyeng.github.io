@@ -13,7 +13,7 @@ function hide(i) {
 var now = -1;
 var resLength = 0;
 var thisSearch = 'https://www.baidu.com/s?wd=';
-var thisSearchIcon = 'skin/baidu.png';
+var thisSearchIcon = './baidu.png';
 var storage = window.localStorage;
 if (!storage.stopHot) {
 	storage.stopHot = true
@@ -94,23 +94,23 @@ $(function() {
 	var search = {
 		data: [{
 			name: 'google',
-			img: 'skin/google.png',
+			img: './google.png',
 			url: 'https://www.google.com.hk/search?q='
 		},{
 			name: 'baidu',
-			img: 'skin/baidu.png',
+			img: './baidu.png',
 			url: 'https://www.baidu.com/s?wd='
 		},{
 			name: 'bing',
-			img: 'skin/bing.png',
+			img: './bing.png',
 			url: 'https://cn.bing.com/search?q='
 		},{
 			name: 'sogou',
-			img: 'skin/sogou.png',
+			img: './sogou.png',
 			url: 'https://wap.sogou.com/web/searchList.jsp?keyword='
 		},{
 			name: 'yandex',
-			img: 'skin/yandex.png',
+			img: './yandex.png',
 			url: 'https://yandex.com/search/?text='
 		}]
 	}

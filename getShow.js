@@ -12,7 +12,7 @@ function getCookie(cookieName) {
 }
 var link11=document.getElementById("links11"),link12=document.getElementById("links12"),link13=document.getElementById("links13"),link14=document.getElementById("links14"),link21=document.getElementById("links21"),link22=document.getElementById("links22"),link23=document.getElementById("links23"),link24=document.getElementById("links24"),link31=document.getElementById("links31"),link32=document.getElementById("links32"),link33=document.getElementById("links33"),link34=document.getElementById("links34"),link41=document.getElementById("links41"),link42=document.getElementById("links42"),link43=document.getElementById("links43"),link44=document.getElementById("links44"),link51=document.getElementById("links51"),link52=document.getElementById("links52"),link53=document.getElementById("links53"),link54=document.getElementById("links54"),link61=document.getElementById("links61"),link62=document.getElementById("links62"),link63=document.getElementById("links63"),link64=document.getElementById("links64");
 function show(links,n){links.href=getCookie(n).split("|")[1];links.innerHTML=getCookie(n).split("|")[0]};
-if (document.cookie.indexOf("link11=") != -1){show(link11,"link11")}else{link11.text="新 浪"};
+if (document.cookie.indexOf("link11=") != -1){show(link11,"link11")}else{link11.text="OA"};
 if (document.cookie.indexOf("link12=") != -1){show(link12,"link12")}else{link12.text="搜 狐"};
 if (document.cookie.indexOf("link13=") != -1){show(link13,"link13")}else{link13.text="网 易"};
 if (document.cookie.indexOf("link14=") != -1){show(link14,"link14")}else{link14.text="腾 讯"};

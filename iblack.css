@@ -1,0 +1,26 @@
+/*public*/
+body {background:#25262a;color:#909090;}
+a{color:#909090;}a:hover{color:#0188fb;}
+.header {background:#202124;}
+.topbox #setSkin{border:1px solid #35363a;}
+.topbox #setSkin:hover{border:1px solid #eee;}
+/*hot site*/
+.hot {border-top:1px solid #35363a;}
+.hot ul{border:1px solid #35363a;border-top:none;}
+.hot li{border-right:1px solid #35363a;}
+/*info*/
+.sort p{border-bottom:1px solid #35363a;}
+.sort p span{color:#909090}
+.sort p span a{color:#909090;}
+
+.search-input {background:#202124;border:1px solid #35363a;border-right:none;color:#909090;}
+.search-btn {border:1px solid #35363a;color:#909090;background:#202124}
+.search-hot-text ul {background:#202124;}
+.search-hot-text ul li:hover {background-color:#25262a;color:#0188fb}
+/*select default engine*/
+.search-engine:before {border-bottom:8px solid #35363a;}
+.search-engine {background:#35363a;box-shadow:0 5px 20px 0 #202124;}
+.search-engine-list li {background:#202124;border:1px solid #35363a;}
+
+/*footer*/
+.footer{border-top:1px solid #35363a;background:#25262a}
