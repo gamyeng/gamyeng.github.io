@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>网址设置</title>
+<meta name="keywords" content="网址设置,个性网址">
+<meta name="description" content="手机个性网址设置">
+<link rel="stylesheet" href="./page.css" type="text/css">
+<style type="text/css">
+input[type=text]{border:1px solid #eee;border-radius:2px;padding:5px}
+.a_btn{height: 22px;line-height: 21px;padding: 0 11px;background: #eee;border: 1px #ccc solid;border-radius: 3px;display: inline-block;text-decoration: none;font-size: 12px;}
+.tbs{text-align:center;width:100%;border-radius:5px;padding:0 15px; margin:5px 0; border:1px solid #eee}
+.hot{margin:0 auto;width:100%;max-width:550px}
+.hot ul{float:left;width:100%;border:1px solid #f0f0f0;border-top:none;}
+.hot li{
+	float:left;
+	display:block;
+	width:25%;
+	height:38px;
+	line-height:40px;
+	text-align:center;
+	overflow:hidden;
+	border-right:1px solid #f0f0f0;
+}
+.hot ul li:last-child{border-right:none}
+</style>
+<script src="./hm.js"></script><script type="text/javascript" src="./counter.js"></script>
+</head>
+<body>
+<div class="header">
+	<a href="https://gamyeng.github.io/" class="home"></a>
+	<div class="channel">常用网站设置</div>
+</div>
+<div class="hot clearfix">
+    <ul><li><a id="links11" href="https://www.sina.cn/">新 浪</a></li><li><a id="links12" href="http://m.sohu.com/">搜 狐</a></li><li><a id="links13" href="http://3g.163.com/">网 易</a></li><li><a id="links14" href="http://3g.qq.com/">腾 讯</a></li></ul>
+	<ul><li><a id="links21" href="http://m.xinhuanet.com/">新 华</a></li><li><a id="links22" href="http://m.people.cn/">人 民</a></li><li><a id="links23" href="https://m.cctv.com/">央 视</a></li><li><a id="links24" href="http://m.cnr.cn/">央 廣</a></li></ul>
+	<ul><li><a id="links31" href="https://m.huanqiu.com/">环 球</a></li><li><a id="links32" href="https://m.gmw.cn/">光 明</a></li><li><a id="links33" href="http://www.cyol.net/">中 青</a></li><li><a id="links34" href="https://m.chinanews.com/">中 新</a></li></ul>
+	<ul><li><a id="links41" href="https://www.zaobao.com/">早 报</a></li><li><a id="links42" href="https://i.ifeng.com/">凤 凰</a></li><li><a id="links43" href="https://m.guancha.cn/">观 察</a></li><li><a id="links44" href="http://m.cankaoxiaoxi.com/">参 考</a></li></ul>
+	<ul><li><a id="links51" href="https://www.jiemian.com/">界 面</a></li><li><a id="links52" href="https://m.thepaper.cn/">澎 湃</a></li><li><a id="links53" href="https://www.zhihu.com/">知 乎</a></li><li><a id="links54" href="https://m.douban.com/home_guide">豆 瓣</a></li></ul>
+	<ul><li><a id="links61" href="http://www.gov.cn/">政 府</a></li><li><a id="links62" href="https://m.mysmth.net/index">水 木</a></li><li><a id="links63" href="https://m.weibo.cn/">微 博</a></li><li><a id="links64" href="https://gamyeng.github.io/set.html" style="color: rgb(255, 0, 0);">设 置</a></li></ul>
+	<script type="text/javascript" src="./set_files/getShow.js.下载"></script>
+</div>
+<div class="sort">
+	<p><span>设置网址</span></p>
+<script>
+function getValue(linkn,a,b) {
+	if (document.cookie.indexOf(linkn+"=") != -1){
+		var arr=getCookie(linkn).split("|"),urls;
+		if(arr.length>2){urls=arr[1]+"|"+arr[2]}else{urls=arr[1]};
+		document.write('<table class="tbs"><tr><form id="'+linkn+'" onSubmit="return false"><td width="50%"><input type="text" style="width:150px" name="web" value="'+ arr[0] + '" /></td><td width="50%"><input type="text" name="url" value="'+ urls + '" style="width:150px" /></td></tr><tr><td><a class="a_btn" onclick="setValue(\''+linkn+'\')">设置<a/></td><td><a class="a_btn" onclick="delValue(\''+linkn+'\')">清除<a/></td></form></tr></table>');
+	}
+	else{document.write('<table class="tbs"><tr><form id="'+linkn+'" onSubmit="return false"><td width="50%"><input type="text" style="width:150px" name="web" value="'+a+'" /></td><td width="50%"><input type="text" name="url" value="'+b+'" style="width:150px" /></td></tr><tr><td><a class="a_btn" onclick="setValue(\''+linkn+'\')">设置<a/></td><td><a class="a_btn" onclick="delValue(\''+linkn+'\')">清除<a/></td></form></tr></table>');}
+}
+	getValue("link11",link11.text,link11.href);
+	getValue("link12",link12.text,link12.href);
+	getValue("link13",link13.text,link13.href);
+	getValue("link14",link14.text,link14.href);
+	getValue("link21",link21.text,link21.href);
+	getValue("link22",link22.text,link22.href);
+	getValue("link23",link23.text,link23.href);
+	getValue("link24",link24.text,link24.href);
+	getValue("link31",link31.text,link31.href);
+	getValue("link32",link32.text,link32.href);
+	getValue("link33",link33.text,link33.href);
+	getValue("link34",link34.text,link34.href);
+	getValue("link41",link41.text,link41.href);
+	getValue("link42",link42.text,link42.href);
+	getValue("link43",link43.text,link43.href);
+	getValue("link44",link44.text,link44.href);
+	getValue("link51",link51.text,link51.href);
+	getValue("link52",link52.text,link52.href);
+	getValue("link53",link53.text,link53.href);
+	getValue("link54",link54.text,link54.href);
+	getValue("link61",link61.text,link61.href);
+	getValue("link62",link62.text,link62.href);
+	getValue("link63",link63.text,link63.href);
+	getValue("link64",link64.text,link64.href);
+function setValue(linkn){
+	var web = document.getElementById(linkn).web.value;
+	var url = document.getElementById(linkn).url.value;
+	if (web.length<2 || web.length>20 ){
+		alert("名称为2~20个字符");}
+	else if(url.length<10 || url.length>150){
+		alert("网址为10~150个字符");}
+	else{
+		var exp = new Date();
+		exp.setTime(exp.getTime() + 365 * 72 * 60 * 60 * 1000);
+		document.cookie =linkn + "=" + web +"|" + url + ";expires=" + exp.toGMTString();
+		if(linkn=="link11"){show(link11,"link11")};
+		if(linkn=="link12"){show(link12,"link12")};
+		if(linkn=="link13"){show(link13,"link13")};
+		if(linkn=="link14"){show(link14,"link14")};
+		if(linkn=="link21"){show(link21,"link21")};
+		if(linkn=="link22"){show(link22,"link22")};
+		if(linkn=="link23"){show(link23,"link23")};
+		if(linkn=="link24"){show(link24,"link24")};
+		if(linkn=="link31"){show(link31,"link31")};
+		if(linkn=="link32"){show(link32,"link32")};
+		if(linkn=="link33"){show(link33,"link33")};
+		if(linkn=="link34"){show(link34,"link34")};
+		if(linkn=="link41"){show(link41,"link41")};
+		if(linkn=="link42"){show(link42,"link42")};
+		if(linkn=="link43"){show(link43,"link43")};
+		if(linkn=="link44"){show(link44,"link44")};
+		if(linkn=="link51"){show(link51,"link51")};
+		if(linkn=="link52"){show(link52,"link52")};
+		if(linkn=="link53"){show(link53,"link53")};
+		if(linkn=="link54"){show(link54,"link54")};
+		if(linkn=="link61"){show(link61,"link61")};
+		if(linkn=="link62"){show(link62,"link62")};
+		if(linkn=="link63"){show(link63,"link63")};
+		if(linkn=="link64"){show(link64,"link64");link64.style.color=""};
+		alert("设置成功");
+	}
+}
+function delValue(links){
+	document.cookie =links + "= 0;max-age=0";
+	if(links=="link11"){document.getElementById(links).web.value='新 浪';document.getElementById(links).url.value='https://www.sina.cn/';link11.innerHTML="新 浪";link11.href="https://www.sina.cn/"};
+	if(links=="link12"){document.getElementById(links).web.value='搜 狐';document.getElementById(links).url.value='http://m.sohu.com/';link12.innerHTML="搜 狐";link12.href="http://m.sohu.com/"};
+	if(links=="link13"){document.getElementById(links).web.value='网 易';document.getElementById(links).url.value='http://3g.163.com/';link13.innerHTML="网 易";link13.href="http://3g.163.com/"};
+	if(links=="link14"){document.getElementById(links).web.value='腾 讯';document.getElementById(links).url.value='http://3g.qq.com/';link14.innerHTML="腾 讯";link14.href="http://3g.qq.com/"};
+	if(links=="link21"){document.getElementById(links).web.value='新 华';document.getElementById(links).url.value='http://m.xinhuanet.com/';link21.innerHTML="新 华";link21.href="http://m.xinhuanet.com/"};
+	if(links=="link22"){document.getElementById(links).web.value='人 民';document.getElementById(links).url.value='http://m.people.cn';link22.innerHTML="人 民";link22.href="http://m.people.cn"};
+	if(links=="link23"){document.getElementById(links).web.value='央 视';document.getElementById(links).url.value='https://m.cctv.com/';link23.innerHTML="央 视";link23.href="https://m.cctv.com/"};
+	if(links=="link24"){document.getElementById(links).web.value='央 廣';document.getElementById(links).url.value='http://m.cnr.cn/';link24.innerHTML="央 廣";link24.href="http://m.cnr.cn/"};
+	
+	if(links=="link31"){document.getElementById(links).web.value='环 球';document.getElementById(links).url.value='https://m.huanqiu.com/';link31.innerHTML="环 球";link31.href="https://m.huanqiu.com/"};
+	if(links=="link32"){document.getElementById(links).web.value='光 明';document.getElementById(links).url.value='https://m.gmw.cn/';link32.innerHTML="光 明";link32.href="https://m.gmw.cn/"};
+	if(links=="link33"){document.getElementById(links).web.value='中 青';document.getElementById(links).url.value='http://www.cyol.net/';link33.innerHTML="中 青";link33.href="http://www.cyol.net/"};
+	if(links=="link34"){document.getElementById(links).web.value='中 新';document.getElementById(links).url.value='https://m.chinanews.com/';link34.innerHTML="中 新";link34.href="https://m.chinanews.com/"};
+	
+	if(links=="link41"){document.getElementById(links).web.value='早 报';document.getElementById(links).url.value='https://www.zaobao.com/';link41.innerHTML="早 报";link41.href="https://www.zaobao.com/"};
+	if(links=="link42"){document.getElementById(links).web.value='凤 凰';document.getElementById(links).url.value='https://i.ifeng.com/';link42.innerHTML="凤 凰";link42.href="https://i.ifeng.com/"};
+	if(links=="link43"){document.getElementById(links).web.value='观 察';document.getElementById(links).url.value='https://m.guancha.cn/';link43.innerHTML="观 察";link43.href="https://m.guancha.cn/"};
+	if(links=="link44"){document.getElementById(links).web.value='参 考';document.getElementById(links).url.value='http://m.cankaoxiaoxi.com/';link44.innerHTML="参 考";link44.href="http://m.cankaoxiaoxi.com/"};
+	
+	if(links=="link51"){document.getElementById(links).web.value='界 面';document.getElementById(links).url.value='https://www.jiemian.com/';link51.innerHTML="界 面";link51.href="https://www.jiemian.com/"};
+	if(links=="link52"){document.getElementById(links).web.value='澎 湃';document.getElementById(links).url.value='https://m.thepaper.cn/';link52.innerHTML="澎 湃";link52.href="https://m.thepaper.cn/"};
+	if(links=="link53"){document.getElementById(links).web.value='知 乎';document.getElementById(links).url.value='https://www.zhihu.com/';link53.innerHTML="知 乎";link53.href="https://www.zhihu.com/"};
+	if(links=="link54"){document.getElementById(links).web.value='豆 瓣';document.getElementById(links).url.value='https://m.douban.com/home_guide';link54.innerHTML="豆 瓣";link54.href="https://m.douban.com/home_guide"};
+	
+	if(links=="link61"){document.getElementById(links).web.value='政 府';document.getElementById(links).url.value='http://www.gov.cn/';link61.innerHTML="政 府";link61.href="http://www.gov.cn/"};
+	if(links=="link62"){document.getElementById(links).web.value='水 木';document.getElementById(links).url.value='https://m.mysmth.net/index';link62.innerHTML="水 木";link62.href="https://m.mysmth.net/index"};
+	if(links=="link63"){document.getElementById(links).web.value='微 博';document.getElementById(links).url.value='https://m.weibo.cn/';link63.innerHTML="微 博";link63.href="https://m.weibo.cn/"};
+	if(links=="link64"){document.getElementById(links).web.value='设 置';document.getElementById(links).url.value='https://gamyeng.github.io/set.html';link64.innerHTML="设 置";link64.href="https://gamyeng.github.io/set.html";link64.style.color="#f00"};
+	alert("删除成功，已恢复为默认设置！");
+}
+</script><table class="tbs"><tbody><tr><form id="link11" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="新 浪"></td><td width="50%"><input type="text" name="url" value="https://www.sina.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link11&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link11&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link12" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="搜 狐"></td><td width="50%"><input type="text" name="url" value="http://m.sohu.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link12&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link12&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link13" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="网 易"></td><td width="50%"><input type="text" name="url" value="http://3g.163.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link13&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link13&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link14" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="腾 讯"></td><td width="50%"><input type="text" name="url" value="http://3g.qq.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link14&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link14&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link21" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="新 华"></td><td width="50%"><input type="text" name="url" value="http://m.xinhuanet.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link21&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link21&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link22" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="人 民"></td><td width="50%"><input type="text" name="url" value="http://m.people.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link22&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link22&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link23" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="央 视"></td><td width="50%"><input type="text" name="url" value="https://m.cctv.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link23&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link23&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link24" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="央 廣"></td><td width="50%"><input type="text" name="url" value="http://m.cnr.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link24&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link24&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link31" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="环 球"></td><td width="50%"><input type="text" name="url" value="https://m.huanqiu.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link31&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link31&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link32" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="光 明"></td><td width="50%"><input type="text" name="url" value="https://m.gmw.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link32&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link32&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link33" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="中 青"></td><td width="50%"><input type="text" name="url" value="http://www.cyol.net/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link33&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link33&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link34" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="中 新"></td><td width="50%"><input type="text" name="url" value="https://m.chinanews.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link34&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link34&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link41" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="早 报"></td><td width="50%"><input type="text" name="url" value="https://www.zaobao.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link41&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link41&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link42" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="凤 凰"></td><td width="50%"><input type="text" name="url" value="https://i.ifeng.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link42&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link42&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link43" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="观 察"></td><td width="50%"><input type="text" name="url" value="https://m.guancha.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link43&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link43&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link44" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="参 考"></td><td width="50%"><input type="text" name="url" value="http://m.cankaoxiaoxi.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link44&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link44&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link51" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="界 面"></td><td width="50%"><input type="text" name="url" value="https://www.jiemian.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link51&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link51&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link52" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="澎 湃"></td><td width="50%"><input type="text" name="url" value="https://m.thepaper.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link52&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link52&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link53" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="知 乎"></td><td width="50%"><input type="text" name="url" value="https://www.zhihu.com/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link53&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link53&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link54" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="豆 瓣"></td><td width="50%"><input type="text" name="url" value="https://m.douban.com/home_guide" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link54&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link54&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link61" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="政 府"></td><td width="50%"><input type="text" name="url" value="http://www.gov.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link61&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link61&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link62" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="水 木"></td><td width="50%"><input type="text" name="url" value="https://m.mysmth.net/index" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link62&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link62&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link63" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="微 博"></td><td width="50%"><input type="text" name="url" value="https://m.weibo.cn/" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link63&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link63&#39;)">清除</a><a></a></td></tr></tbody></table><table class="tbs"><tbody><tr><form id="link64" onsubmit="return false"></form><td width="50%"><input type="text" style="width:150px" name="web" value="设 置"></td><td width="50%"><input type="text" name="url" value="https://gamyeng.github.io/set.html" style="width:150px"></td></tr><tr><td><a class="a_btn" onclick="setValue(&#39;link64&#39;)">设置</a><a></a></td><td><a class="a_btn" onclick="delValue(&#39;link64&#39;)">清除</a><a></a></td></tr></tbody></table>
+</div>
+<div class="sort" style="line-height:20px; padding:5px; background:#f5f5f5; font-size:14px; color: #789;border-radius:5px">
+	说明：所有设置由浏览器以cookie文件保存在设备中，清理浏览器cookie，设置将自动失效，恢复默认值。
+</div>
+<div class="footer">
+    <script type="text/javascript" src="./footer.js"></script><ul><li><a href="https://gamyeng.github.io/">回到首页</a></li><li><a href="https://gamyeng.github.io/about.html">关于我们</a></li></ul><div class="copyright">© wobo</div>
+</div>
+
+</body></html>
