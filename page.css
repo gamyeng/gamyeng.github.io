@@ -1,0 +1,25 @@
+/*public*/
+body {background:#f9f9f9;color:#333;font-family:'PingFang SC','Microsoft YaHei','SimHei','Arial','SimSun';font-size:16px}
+.header, .sort, .footer {margin:0 auto;width:100%;max-width:550px;}
+* {margin:0;padding:0;box-sizing:border-box;}
+ol,ul {list-style:none}
+a {color:#333;text-decoration:none}
+.clearfix:after {content:'';display:block;clear:both;}
+/*header*/
+.header {height:45px; margin:0 auto 10px auto; background:#0082c8;}
+.header .home {float:left;width:45px;height:45px;background:url(skin/icon.png)5px 5px no-repeat;background-size:35px 35px;}
+.header .channel{color:#f9f9f9; font-size:20px; line-height:50px; margin-right:45px; text-align:center;}
+/*info*/
+.sort {line-height:35px;clear:both}
+.sort p{width:100%;height:40px;display:block;line-height:40px;border-bottom:1px solid #f0f0f0;}
+.sort p span{width:25%;display:block;text-align:left; margin-left:10px;font-weight:700;color:#0082c8}
+.sort ul{width:100%;clear:both}
+.sort li{float:left;width:33%;text-align:center;}
+.sort .info li{width:100%;text-align:left;padding:3px 15px;line-height:29px;border-bottom:1px solid #f2f2f2}
+.sort .info li:last-child{border-bottom:none}
+/*footer*/
+.footer{line-height:21px;text-align:center;padding-top:12px;margin-top:6px;border-top:1px solid #dbe0e8;background:#e4e8eb}
+.footer a{color:#999}.footer a:hover{color:#0188fb}
+.footer ul {display:inline-block}
+.footer li{float:left;margin:0 5px;}
+.copyright {color:#999;padding-bottom:6px}
