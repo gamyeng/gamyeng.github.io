@@ -3,7 +3,7 @@ body {background:#25262a;color:#909090;}
 a {color:#909090;}
 /*header*/
 .header {background:#202124;}
-.header .home {background:url(skin/icon.png)5px 5px no-repeat;background-size:35px 35px;}
+.header .home {background:url(./icon.png)5px 5px no-repeat;background-size:35px 35px;}
 .header .channel{color:#FFFFFF;}
 /*info*/
 .sort p{border-bottom:1px solid #35363a;}

@@ -7,7 +7,7 @@ a {color:#333;text-decoration:none}
 .clearfix:after {content:'';display:block;clear:both;}
 /*header*/
 .header {height:45px; margin:0 auto 10px auto; background:#0082c8;}
-.header .home {float:left;width:45px;height:45px;background:url(skin/icon.png)5px 5px no-repeat;background-size:35px 35px;}
+.header .home {float:left;width:45px;height:45px;background:url(./icon.png)5px 5px no-repeat;background-size:35px 35px;}
 .header .channel{color:#f9f9f9; font-size:20px; line-height:50px; margin-right:45px; text-align:center;}
 /*info*/
 .sort {line-height:35px;clear:both}
