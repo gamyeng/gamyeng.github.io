@@ -100,10 +100,19 @@ a.red{color:#f00}
 }
 
 .input[type="text"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+        flex:1;
+	height:40px;
+	width:70%;
+	padding-top:3px;
+	padding-left:45px;
+	outline:none;
+	border:1px solid #eee;
+	border-right:none;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	background:#f9f9f9;
+	color: #333;
+	font-size:16px;
 }
 .search-hot-text {position:absolute;z-index:100;width:100%;max-width:550px;margin-top:1px;}
 .search-hot-text ul li {line-height:35px;padding:0 15px;cursor:pointer}
