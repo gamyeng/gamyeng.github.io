@@ -114,6 +114,17 @@ a.red{color:#f00}
 	color: #333;
 	font-size:16px;
 }
+.button[type="submit"] {
+        width:81px;
+	height:40px;
+	background:#f9f9f9;
+	border:1px solid #eee;
+	outline:none;
+	color: #333;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	font-size:16px;
+}
 .search-hot-text {position:absolute;z-index:100;width:100%;max-width:550px;margin-top:1px;}
 .search-hot-text ul li {line-height:35px;padding:0 15px;cursor:pointer}
 .search-hot-text ul li:first-child {border-radius:5px 5px 0 0;}
