@@ -82,7 +82,7 @@ a.red{color:#f00}
 	cursor:pointer;
 	display:none;
 }
-.search-btn {
+.search-btn[type="submit"] {
 	width:81px;
 	height:40px;
 	background:#f9f9f9;
@@ -92,6 +92,18 @@ a.red{color:#f00}
 	border-bottom-right-radius:5px;
 	border-top-right-radius:5px;
 	font-size:16px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 .search-hot-text {position:absolute;z-index:100;width:100%;max-width:550px;margin-top:1px;}
 .search-hot-text ul li {line-height:35px;padding:0 15px;cursor:pointer}
