@@ -47,6 +47,7 @@ a.red{color:#f00}
 	border-radius:5px;
 	flex-wrap:wrap;
         justify-content: center;
+	align-items: center;
 }
 .search-icon {
 	position:absolute;
