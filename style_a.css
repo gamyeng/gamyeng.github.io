@@ -106,8 +106,8 @@ a.red{color:#f00}
 .input[type="text"] {
         flex:1;
 	height:40px;
-	width:70%;
-	padding-top:3px;
+	width:75%;
+	padding-top:5px;
 	padding-left:45px;
 	outline:none;
 	border:1px solid #eee;
