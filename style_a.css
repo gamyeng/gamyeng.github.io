@@ -35,7 +35,7 @@ a.red{color:#f00}
 .sort li{float:left;display:block;height:35px;width:18%;text-align:center;}
 .sort ul li:first-child a{color:#0082c8}
 .sort ul li:last-child{float:right;width:8%;margin-right:2%}
-.sort ul li span{display:block;width:16px;height:10px;margin:12px auto;background:url(skin/jiao.png) no-repeat;background-size:20px 20px}
+.sort ul li span{display:block;width:16px;height:10px;margin:12px auto;background:url(./jiao.png) no-repeat;background-size:20px 20px}
 .sort ul li .dw{background-position:-2px -12px;}
 .sort ul li .up{background-position:-2px 0px;}
 .search {position:relative;}
