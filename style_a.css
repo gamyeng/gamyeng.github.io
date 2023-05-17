@@ -40,7 +40,7 @@ a.red{color:#f00}
 .sort ul li .up{background-position:-2px 0px;}
 .search {position:relative;}
 .search-box {
-	height:50px;
+	height:20px;
 	overflow:hidden;
 	display:-webkit-flex;
 	display:flex;
