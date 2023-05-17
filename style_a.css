@@ -40,7 +40,7 @@ a.red{color:#f00}
 .sort ul li .up{background-position:-2px 0px;}
 .search {position:relative;}
 .search-box {
-	height:20px;
+	height:40px;
 	overflow:hidden;
 	display:-webkit-flex;
 	display:flex;
@@ -102,7 +102,7 @@ a.red{color:#f00}
   font-size:16px;
 }
 
-.input[type="text"] {
+.input {
         flex:1;
 	height:40px;
 	width:80%;
