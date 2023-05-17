@@ -102,7 +102,7 @@ a.red{color:#f00}
   font-size:16px;
 }
 
-.input {
+.input[type="text"] {
         flex:1;
 	height:40px;
 	width:80%;
