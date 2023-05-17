@@ -96,7 +96,6 @@ a.red{color:#f00}
 	font-size:16px;
 }
 .form {
-	flex:1;
   height:40px;
   justify-content: center;
   align-items: center;
