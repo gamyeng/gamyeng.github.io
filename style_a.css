@@ -10,7 +10,7 @@ a.red{color:#f00}
 .header, .hot, .sort, .footer {margin:0 auto;width:100%;max-width:550px;}
 .header {padding:10px;background:#0082c8;}
 .topbox {margin-bottom:30px;color:#ccc;}
-.topbox #setSkin{width:15px;height:15px;margin-top:2px;margin-right:10px;display:block;float:right;border:1px solid #ccc;border-radius:20%}
+.topbox #setSkin{width:15px;height:15px;margin-top:2px;margin-right:10px;display:block;float:right;border:1px solid #ccc;border-radius:30%}
 .topbox #setSkin:hover{border:1px solid #25262a;}
 /*hot site*/
 .hot {border-top:1px solid #f0f0f0;}
